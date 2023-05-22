@@ -1,3 +1,3 @@
-local comment = require('numToStr/Comment.nvim')
+local comment = require('Comment')
 
 comment.setup()

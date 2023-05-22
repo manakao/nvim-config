@@ -7,7 +7,11 @@ local opts = { noremap = true, silent = true, buffer = bufnr }
 -- https://github.com/nvim-tree/nvim-tree.lua/blob/master/doc/nvim-tree-lua.txt#L109
 
 local function setup()
+
+    keymap.set('n', '|', ':vsplit<CR>')
+    keymap.set('n', '\\', ':split<CR>')
     keymap.set("t", "<esc>", "<C-\\><C-n>", opts)
+
 end
 
 local function on_lsp_attach()

@@ -1,8 +1,8 @@
 local opt = vim.opt
 
---opt.background = "dark"
---opt.signcolumn = "yes"
---opt.backspace = "indent,eol,start"
+opt.syntax = 'on'
+opt.signcolumn = "yes"
+opt.backspace = "indent,eol,start"
 
 opt.splitright = true
 opt.splitbelow = true
