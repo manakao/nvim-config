@@ -4,4 +4,5 @@ require('plugins/mason-null-ls')
 require('plugins/lsp')
 require('plugins/lsp-saga')
 require('plugins/treesitter')
-require('plugins/neotree')
+require('plugins/tree')
+

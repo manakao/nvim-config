@@ -8,12 +8,12 @@ lsp['lua_ls'].setup({
     settings = {
         Lua = {
             diagnostics = {
-                globals = { 'vim' },
+                globals = { 'vim', 'bufnr' },
             },
             workspace = {
                 library = {
-                    [vim.fn.expand('$VIMRUNTIME/lua')] = true,
-                    [vim.fn.stdpath('config') .. '/lua'] = true,
+                    [ vim.fn.expand('$VIMRUNTIME/lua') ] = true,
+                    [ vim.fn.stdpath('config') .. '/lua' ] = true,
                 },
             },
         },

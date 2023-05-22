@@ -1,6 +1,6 @@
-local masonNullLs = require('mason-null-ls')
+local mason_null_ls = require('mason-null-ls')
 
-masonNullLs.setup({
+mason_null_ls.setup({
     ensure_installed = {
         "stylua",
     },

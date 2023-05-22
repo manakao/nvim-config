@@ -15,9 +15,11 @@ vim.opt.rtp:prepend(lazypath)
 
 local opts = {}
 
+-- https://github.com/folke/lazy.nvim#-plugin-spec
 local plugins = {
-    { 'navarasu/onedark.nvim' },
+    { 'navarasu/onedark.nvim', lazy = true },
     { 'nvim-tree/nvim-web-devicons' },
+    { 'numToStr/Comment.nvim' },
 
     {
         "nvim-tree/nvim-tree.lua",
@@ -41,7 +43,7 @@ local plugins = {
         event = "LspAttach",
         dependencies = {
             { "nvim-tree/nvim-web-devicons" },
-            --{"nvim-treesitter/nvim-treesitter"}
+            {"nvim-treesitter/nvim-treesitter"}
         }
     },
     { 'jose-elias-alvarez/null-ls.nvim' },
@@ -53,7 +55,8 @@ local plugins = {
     { 'hrsh7th/cmp-nvim-lsp' },
     { 'saadparwaiz1/cmp_luasnip' },
     { 'rafamadriz/friendly-snippets' },
-    --{ 'onsails/lspkind.nvim' },
+    -- { 'onsails/lspkind.nvim' },
 }
 
 require('lazy').setup(plugins, opts);
+
