@@ -55,7 +55,6 @@ local plugins = {
     { 'hrsh7th/cmp-nvim-lsp' },
     { 'saadparwaiz1/cmp_luasnip' },
     { 'rafamadriz/friendly-snippets' },
-    -- { 'onsails/lspkind.nvim' },
 }
 
 require('lazy').setup(plugins, opts);
