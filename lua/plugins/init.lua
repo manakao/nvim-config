@@ -5,6 +5,6 @@ require('plugins/null-ls')
 require('plugins/lsp')
 require('plugins/lsp-saga')
 require('plugins/treesitter')
-require('plugins/tree')
+--require('plugins/tree')
 require('plugins/comment')
-
+require('plugins/neotree')
